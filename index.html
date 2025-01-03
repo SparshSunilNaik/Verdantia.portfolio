@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="index.css">
+    <!----Font awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Verdantia</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="course.html">Course Project</a></li>
+                        <li><a href="Business.html">Business Case Studies</a></li>
+                        <li><a href="sdg.html">SDG</a></li>
+                        <li><a href="budget.html">Budget</a></li>
+                        <li><a href="technical.html">Technical Aspects</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="Simran.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Simran Kalkeri</h1>
+                    <p> A Full Stack Developer bridging the gap between user experience and 
+                        functionality, designing seamless digital journeys, and diving deep
+                        into the world of web scraping for insightful data!
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#team" class="btn active">Team Members</a>
+                        <a href="blueprint.html" class="btn">Blueprint</a>
+                    </div>
+
+                    <div class="social">
+                        
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="objectives" class="objectives-container">
+            <h2><i class="fa-solid fa-bullseye"></i> Objectives</h2>
+            <div class="card-list">
+                <div class="card">
+                    <h3>Efficient Algorithm Analysis</h3>
+                    <p>Develop a thorough understanding of advanced algorithms by analyzing their design and implementation for solving complex computational problems. This includes evaluating their time and space complexity for real-world applications.</p>
+                </div>
+                <div class="card">
+                    <h3>Optimized Problem Solving</h3>
+                    <p>Apply design techniques such as dynamic programming, divide-and-conquer, and greedy algorithms to optimize solutions for computationally intensive tasks. Focus on creating scalable and efficient systems.</p>
+                </div>
+                <div class="card">
+                    <h3>Practical Application</h3>
+                    <p>Translate theoretical knowledge of algorithms into practical solutions by implementing them in domains such as web scraping, data analytics, and full-stack development, ensuring alignment with industry best practices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="team" class="team-section">
+            <h2><i class="fa-solid fa-users"></i> Our Team</h2>
+            <div class="team-container">
+                <div class="team-card">
+                    <h3>RISHI P KULKARNI</h3>
+                    <p>SRN: 01FE23BCI088</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-portfolio"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <h3>AMAANALI DODDAMANI</h3>
+                    <p>SRN: 01FE23BCI091</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-portfolio"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <h3>SPARSH S NAIK</h3>
+                    <p>SRN: 01FE23BCI085</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-portfolio"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-details">
+            <h2><i class="fa-solid fa-book"></i> Course Details</h2>
+            <div class="details">
+                <p><strong>Course:</strong> DAA (Design and Analysis of Algorithms)</p>
+                <p><strong>Course Instructor:</strong> K.M.M RAJASHEKARAIAH</p>
+                <p><strong>University:</strong> KLE Technological University</p>
+                <p><strong>Portfolio Domain:</strong> Google</p>
+            </div>
+        </div>
+        
+        
+
+        <!-- Typed.js for typing text effect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        <script>
+            var togglebtn = document.querySelector(".togglebtn");
+            var nav = document.querySelector(".navlinks");
+
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            });
+
+            var typed = new Typed(".input", {
+                strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+                typedSpeed: 70,
+                backSpeed: 55,
+                loop: true
+            });
+        </script>
+    </body>
+</html>

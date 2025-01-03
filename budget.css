@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #A6BBB6, #487779); /* Enhanced gradient for a modern look */
+    color: #233130;
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden;
+    animation: fadeInBackground 1.5s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    from {
+        background-color: #233130;
+    }
+    to {
+        background: linear-gradient(135deg, #A6BBB6, #487779);
+    }
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(72, 119, 121, 0.85);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px); /* Glass effect */
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    background: rgba(72, 119, 121, 1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #A6BBB6;
+    font-weight: 600;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(166, 187, 182, 0.7);
+}
+
+/* Main Content */
+.container {
+    width: 85%;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white for elegance */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1, h2, h3 {
+    color: #233130;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+}
+
+h1::after, h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #A6BBB6;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(166, 187, 182, 0.5);
+}
+/* List */
+ul {
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 30px; /* Adds spacing for the custom bullet */
+}
+
+ul li::before {
+    content: '•'; /* Custom bullet point */
+    position: absolute;
+    left: 0;
+    color: #487779; /* Matches the theme color */
+    font-size: 1.5rem; /* Slightly larger for emphasis */
+    line-height: 1.8;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+ul li:hover::before {
+    transform: scale(1.2); /* Slightly enlarges the bullet on hover */
+    color: #A6BBB6; /* Changes color to highlight the bullet */
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #85937D;
+    padding: 15px;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+table th {
+    background-color: #487779;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    background-color: #F5F5F5;
+    color: #233130;
+    font-size: 1rem;
+}
+
+table td:hover {
+    background-color: #A6BBB6;
+    color: #233130;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(72, 119, 121, 0.9);
+    color: white;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+/* Floating Bubbles */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?bubbles') center/cover no-repeat;
+    z-index: -1;
+    opacity: 0.2;
+    animation: floatBubbles 10s infinite ease-in-out;
+}
+
+@keyframes floatBubbles {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

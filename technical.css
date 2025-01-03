@@ -1,0 +1,288 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #A6BBB6, #85937D);
+    color: #233130;
+    line-height: 1.8;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #487779;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover {
+    background-color: #3f6769;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    background-color: #A6BBB6;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo i:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #A6BBB6;
+    text-shadow: 0 0 8px rgba(166, 187, 182, 0.8);
+}
+
+/* Content Container */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+   
+    border-radius: 15px;
+   
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Headings */
+h1 {
+    color: #2c2e2e;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #262727;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #85937D;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #487779;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+table td {
+    background-color: #A6BBB6;
+    color: #233130;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+table td:hover {
+    background-color: #487779;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #487779;
+    color: white;
+    margin-top: 50px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}
+
+/******************************************************************/
+/* Container */
+/* Heading Styling */
+.container h2 {
+    text-align: center; /* Center-align for better emphasis */
+    font-size: 2rem; /* Large size for prominence */
+    color: #2C2C2C; /* Darker shade for contrast */
+    font-family: 'Poppins', sans-serif; /* Professional sans-serif font */
+    font-weight: 700; /* Bold font weight */
+    text-transform: uppercase; /* Ensures uppercase letters */
+    letter-spacing: 1.5px; /* Adds spacing between letters for readability */
+    margin-bottom: 10px; /* Adds spacing below the heading */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Subtitle Styling */
+.container h3 {
+    text-align: center; /* Center-align for subtitle */
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #4A4A4A; /* Slightly lighter shade */
+    font-family: 'Montserrat', sans-serif; /* Complementary font for subtitle */
+    font-weight: 600; /* Semi-bold for hierarchy */
+    letter-spacing: 1.2px; /* Subtle spacing */
+    margin-top: -10px; /* Adjust spacing above */
+    text-transform: uppercase; /* Uniform uppercase text */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+/* Cards Grid */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Card */
+.card {
+    flex: 1 1 calc(30% - 20px); /* Three cards per row */
+    background: linear-gradient(135deg, #A6BBB6, #85937D);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    color: #233130;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #487779, #A6BBB6);
+    color: white;
+}
+
+/* Card Heading */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c2e2e;
+}
+
+/* Card Paragraph */
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100% - 20px); /* Full width on small screens */
+    }
+}
