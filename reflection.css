@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections</title>
+    <link rel="stylesheet" href="technical.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <i>A</i>
+                <span>Verdantia</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course.html">Course Project</a></li>
+            <li><a href="Business.html">Business Case Studies</a></li>
+            <li><a href="sdg.html">SDG</a></li>
+            <li><a href="budget.html">Budget</a></li>
+            <li><a href="technical.html">Technical Aspects</a></li>
+            <li><a href="reflections.html" class="active">Reflections</a></li> <!-- Reflections Page Link -->
+        </ul>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Reflections on Railway Network Optimization</h1>
+        <p>In this section, we explore key insights and reflections based on the work done in optimizing the railway network. 
+          The aim is to reflect on the technical, scalability, and performance aspects that have been considered during this project.</p>
+        
+        <h3>Reflections</h3>
+        <ul>
+            <li><a href="https://1drv.ms/w/c/0aa880050e7360df/EamK5U5LoOhHm1tCXIUY9s0B_-jl79seonyP-8jEGYcSeQ?e=1mnfLj" target="_blank">Theory Reflections</a></li>
+            <li><a href="https://1drv.ms/w/c/0aa880050e7360df/EQNrKGOElHBBiiY9BqFpR0MBlJTkr-7TIg7p_9Z8Cdqg5Q?e=nBAOac" target="_blank">Reflections Document</a></li>
+            <li><a href="https://kletechacin-my.sharepoint.com/:x:/g/personal/01fe23bci085_kletech_ac_in/EYztRj8kc7pOrPAWvYDMVf0B8c1y8LiUTCS7Awt4yXQgZw?e=a2bCEZ" target="_blank">Course Project</a></li>
+        </ul>
+
+        <h3>Future Improvements</h3>
+        <p>Looking forward, there are several opportunities to enhance the system, including further optimization of algorithms, 
+          integration of machine learning techniques for predictive modeling, and exploring advanced data structures for faster data processing.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Verdantia | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
