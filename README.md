@@ -29,3 +29,13 @@ The file `PseudoCodes.cpp` contains alternative algorithm examples which can be 
 
 The C++ code models a small metro network and demonstrates algorithms such as Dijkstra's shortest path and a simple scheduling routine. It also includes a lost-and-found workflow and basic security checks. These features were developed as part of a course assignment and showcased through the accompanying website.
 
+
+## Next steps
+
+New contributors can explore the codebase with these suggestions:
+
+- Open `index.html` to view the website locally.
+- Study `CourseProj.cpp` to learn how the metro network logic works.
+- Experiment with the algorithms inside `PseudoCodes.cpp`.
+- Modify the CSS files or extend the C++ source to add new features.
+
